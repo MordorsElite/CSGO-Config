@@ -4,7 +4,7 @@
 
 This config will likely get updated from time to time. You can also suggest new additions. To get an easy overview of all the commands, type `info` in console after installing and running the autoexec.
 
-## In this folder you will find:
+## In this repository you will find:
 
 | File-Name    | Content-Description                      |
 |--------------|------------------------------------------|

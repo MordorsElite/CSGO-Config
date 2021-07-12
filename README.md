@@ -11,17 +11,18 @@ This config will likely get updated from time to time. You can also suggest new 
 |knife_configs | Folder filled with a config for each knife-type |
 |autoexec.cfg  | My personal autoexec |
 |readme.md   | This explanation of the configs |
+|.gitignore | Only relevant for Github |
 
 ## How to use
-Unfortunately the individual knife-configs are necessary, as the command to drop a knife cannot be used in an alias context.
+Unfortunately, having individual knife-configs is necessary, as the command to drop a knife cannot be writen as an alias command.
 
-To make use of both the autoexec and the knife commands, past the file and folder into here:
+To make use of both the autoexec and the knife commands, paste the file and folder into here:
 ```
 C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg
 ```
 Please leave the knife files inside the 'knife_configs'-folder, the autoexec expects to find them in there.
 
-To activate them either restart CSGO or enter `exec autoexec` in console. To test if everything's working, just enter `info` in console - a big list should now appear. It will tell you about most of the stuff the console can do.
+To activate them either restart CSGO or enter `exec autoexec` in console. To test if everything's working, just enter `info` in console - a big list should now appear. It will tell you about most of the important stuff the config can do.
 
 # Adjusting settings to your preference
 
@@ -31,11 +32,11 @@ For most settings (like mouse-sensitivity), just changing the value will be suff
 
 ## Complicated settings
 
-Others might need some understanding of how the config works. 
+Others might need some understanding of how this config works. 
 
 ### _Crosshairs and Viewmodels_
 
-Crosshairs and viewmodels are set up in such a way that executing a single command (for example `crosshair_01`) in console changes all crosshair/viewmodel settings at once. To see how it works these commands are implemented at part 5.1 / 5.2 of the config. 
+Crosshairs and viewmodels are set up in such a way that executing a single command (for example `crosshair_01`) in console changes all crosshair/viewmodel settings at once. To see how it works, these commands are implemented at part 5.1 / 5.2 of the config. 
 
 If you want to put your current viewmodel/crosshair into my config, I have included a blank for both. They can be found at the end of 5.1 and 5.2 respectively (`viewmodel_XX` and `crosshair_XX`). Simply adjust the values under those headers. You can now use them by entering `viewmodel_XX` or `crosshair_XX` in console. To set them as default, swap them into the commands in part 5.0 of the config.
 
@@ -53,10 +54,10 @@ To implement more than one viewmodel or crosshair, just copy the blank and swap 
 
 ### _Keybinds_
 
-Changing the keybinds for the most part is a simple matter of changing the commands for each bind ind config-part 5.3. You can get a complete list of all keybinds and their functions by entering `allbinds` in the console.
+Changing the keybinds for the most part is a simple matter of changing the commands for each bind in config-part 5.3. You can get a complete list of all keybinds and their functions by entering `allbinds` in the console.
 
 Some explanation might still be needed thought. 
-* Per default, I the movement keys will remove decals like bloodstains and bulletholes. This is great for deathmatch. However, in competative games you might miss out on some info because of it. In order to disable this feature, just type `mk` in the console. That way only they Q-Key will remove decals. 
+* Per default, the movement keys will remove decals like bloodstains and bulletholes. This is great for deathmatch. However, in competative games you might miss out on some info because of it. In order to disable this feature, just type `mk` in the console. That way only they Q-Key will remove decals. 
 * The microphone is bound to P, but I have bound a button on my mouse to P. So if you want to use your keyboard to activate the mic, you should probably change that one
 * Jumpbind is set to Z, which for me is another mouse-sidebutton
 * The I-Key toggles between the defalt- and nadecrosshair
@@ -64,6 +65,8 @@ Some explanation might still be needed thought.
 * If your teammates stand in front of you, their nametags might get in the way of your vision, with the O-Key you can toggle their nametag- and weaponry-display
 
 ## Config Syntax
+
+If you haven't worked with CSGO-Configs before, here is some basic syntax.
 
 | Syntax | Meaning |
 |--------|---------|
@@ -121,4 +124,4 @@ C:\Program Files (x86)\Steam\userdata\YOUR-STEAM-ID\730\local\cfg
 ```
 Also located there is the main config.cfg. If the autoexec isn't loaded automatically for some reason, you can add `exec autoexec` as last line into that file.
 
-# Have fun using the config :)
+# Have fun using my config :)

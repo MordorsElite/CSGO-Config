@@ -9,9 +9,9 @@ This config will likely get updated from time to time. You can also suggest new 
 | File-Name    | Content-Description                      |
 |--------------|------------------------------------------|
 |knife_configs | Folder filled with a config for each knife-type |
-|autoexec.cfg  | My personal autoexec |
-|readme.md   | This explanation of the configs |
 |.gitignore | Only relevant for Github |
+|readme.md   | This explanation of the configs |
+|autoexec.cfg  | My personal autoexec |
 
 ## How to use
 Unfortunately, having individual knife-configs is necessary, as the command to drop a knife cannot be writen as an alias command.

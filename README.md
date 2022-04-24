@@ -58,11 +58,8 @@ Changing the keybinds for the most part is a simple matter of changing the comma
 
 Some explanation might still be needed thought. 
 * Per default, the movement keys will remove decals like bloodstains and bulletholes. This is great for deathmatch. However, in competative games you might miss out on some info because of it. In order to disable this feature, just type `mk` in the console. That way only they Q-Key will remove decals. 
-* The microphone is bound to P, but I have bound a button on my mouse to P. So if you want to use your keyboard to activate the mic, you should probably change that one
-* Jumpbind is set to Z, which for me is another mouse-sidebutton
 * The I-Key toggles between the defalt- and nadecrosshair
-* The L-Key toggles voice_loopback on or off (good to figure out if your mic works at the start of a game)
-* If your teammates stand in front of you, their nametags might get in the way of your vision, with the O-Key you can toggle their nametag- and weaponry-display
+* If your teammates stand in front of you, their nametags might get in the way of your vision, with the o-Key you can toggle their nametag- and weaponry-display
 
 ## Config Syntax
 
@@ -71,11 +68,11 @@ If you haven't worked with CSGO-Configs before, here is some basic syntax.
 | Syntax | Meaning |
 |--------|---------|
 | `// x` | Comment x will not be seen as a command |
-| `alias "x" "y;z;"` | Entering x in console executes command y and z |
+| `alias "x" "y;z;"` | Entering x in console will execute command y and z |
 | `bind "a" "x"` | Pressing a on your keyboard will execute command x |
 | `toggle commandX y z` | Toggles the value for commandX between y and z |
 
-More complicated commands can be achieved, by using one alias to execute several others in succession. For exmaple, the `info` command.
+More complicated commands can be achieved, by using one alias to execute several others in succession. See for exmaple the `info` command.
 
 If you want to write a more complex toggle, you can use two aliases to represent each side and one that points at one of them. After each execution of the main alias, it gets redirected to the other toggle as demonstrated below:
 ```
